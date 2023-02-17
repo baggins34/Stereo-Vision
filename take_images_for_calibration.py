@@ -26,7 +26,7 @@ def main():
         elif key == ord('c'):
             cv2.imwrite("office_images/left" + str(image_id) + ".png", left_frame)
             cv2.imwrite("office_images/right" + str(image_id) + ".png", right_frame)
-            i += 1
+            image_id += 1
 
     CamL.release()
     CamR.release()
